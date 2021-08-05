@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+}
+
+.fa-bars{
+    color: #4a6f8b;
+    visibility: hidden;
+}
+
+nav{
+    position: relative;
+    left: 200px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 20px;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+li{
+    display: inline-block;
+    margin: 10px;
+}
+
+li a{
+    color: #3C6381;
+    text-decoration: none;
+}
+
+.covid-tracker{
+    color: red;
+}
+
+.covid-tracker:hover{
+    background-color: #000;
+    color: red;
+}
+
+li a:hover{
+    background-color: #3C6381;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+}
+
+.home-bg{
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.main-container{
+    position: absolute;
+    top: 150px;
+    right: 380px;
+    text-align: center;
+    font-size: larger;
+}
+
+.main-container h1{
+    color: #2c4c64;
+    font-weight: bold;
+}
+
+.main-container h2{
+    color: #3C6381;
+    font-weight: inherit;
+}
+
+.main-container button{
+    background-color: #3C6381;
+    padding: 5px 15px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    margin-top: 8px;
+}
+
+.main-container button a{
+    color: white;
+    text-decoration: none;
+}
+
+.prevent-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+.first-row{
+    display: flex;
+    text-align: center;
+    margin: 0px;
+}
+
+.img-care{
+    margin: 45px;
+}
+
+.second-row{
+    display: flex;
+    text-align: center;
+    margin: 0px;
+}
+
+.first-row h2, .second-row h2{
+    color: #2f526d;
+    position: relative;
+    bottom: 40px;
+}
+
+.first-row p, .second-row p{
+    color: #3a6180;
+}
+
+.prevent-title{
+    color: #3C6381;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.cohete{
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: -650px;
+    animation: cohete 3s linear infinite;
+}
+
+@keyframes cohete {
+    100%, 0%{
+        transform: translateY(0rem);
+    }
+
+    50%{
+        transform: translateY(-2rem);
+    }
+}
+
+.img-care{
+    width: 120px;
+    height: 120px;
+}
+
+.sintomas-container{
+    display: flex;
+    margin: 50px;
+    padding: 50px;
+}
+
+.sintomas-container h2{
+    text-transform: uppercase;
+    color: red;
+    font-size: 35px;
+    position: absolute;
+    right: 490px;
+    margin-top: -10px;
+}
+
+.sintomas-container .sint-img{
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.sympths{
+    margin-left: 50px;
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.sympths p{
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-left: 12px;
+    font-size: 15px;
+}
+
+.do-container, .donot-container{
+    border: 2px solid white;
+    margin: 20px;
+    box-shadow: 0px 9px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.do-notdo{
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+    position: relative;
+    bottom: 40px;
+}
+
+.precauciones-titulo{
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+}
+
+.precauciones-titulo h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #3C6381;
+}
+
+.cosas {
+    display: flex;
+    padding: 0px 15px;
+}
+
+.cosas h2{
+    padding: 50px 0;
+    margin-left: 20px;
+    text-transform: initial;
+}
+
+.do-container h1, .donot-container h1{
+    text-align: center;
+}
+
+.do-container h1{
+    font-weight: 500;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    background-color: #3C6381;
+}
+
+.donot-container h1{
+    font-weight: 500;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(255, 115, 0);
+}
+
+.do-container h2, .donot-container h2{
+    padding: -40px 0px;
+    font-weight: 600;
+    color: #3C6381;
+    font-size: 22px;
+    width: 70%;
+}
+
+.doctores-container img{
+    width: 150px;
+    height: 150px;
+    background-color: #3C6381;
+    border-radius: 50%;
+}
+
+
+.doctores-container{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.doctor{
+    padding: 20px;
+    width: 20%;
+    box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.doctor i{
+    margin: 5px 2px;
+    background-color: #e4dede;
+    padding: 11px;
+    font-size: 16px;
+    color: #3C6381;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.doctor i:hover{
+    background-color: #3C6381;
+    color: #fff;
+    animation: logos 2s;
+}
+
+@keyframes logos{
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
+.wash-container{
+    text-align: center;
+   display: grid;
+   position: relative;
+   right: 100px;
+   grid-template-columns: 33% 33% 33%;
+   padding: 50px 200px;
+}
+
+.wash-container img{
+    width: 150px;
+    height: 150px;
+}
+
+.wash-h1-container{
+    text-align: center;
+    padding-top: 50px;
+}
+.wash-h1-container h1{
+    text-transform: uppercase;
+    color: #3C6381;
+    font-weight: 500;
+}
+
+.wash-imgs{
+    text-align: center;
+    color: #3C6381;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.img-main-wash img{
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    right: -80px;
+    bottom: 40px;
+}
+
+footer{
+    width: 100%;
+    background: url(/images/background-img.jpg);
+    display: flex;
+    color: #3C6381;
+}
+
+.about-us-container{
+    width: 30%;
+}
+
+.location-container{
+    margin: 10px;
+}
+
+.links-container ul{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-container, .location-container, .links-container, .follow-us-container {
+    margin: 50px;
+}
+
+.follow-us-container ul{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign{
+    text-align: center;
+    font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 468px){
+    .fa-bars{
+        visibility: visible;
+        position: absolute;
+        left: 380px;
+        bottom: 10px;
+        font-size: 30px;
+    }
+
+    .show{
+        visibility: hidden;
+    }
+
+    nav ul{
+        background-color: #3C6381;
+        position: relative;
+        right: 300px;
+        width: 100vw;
+        bottom: -40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        filter: opacity(.9);
+    }
+
+    nav ul li{
+        background-color: #fff;
+        width: 50%;
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    header img{
+        position: relative;
+        top: -20px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .home-a{
+    text-decoration: none;
+    background-color: #3C6381;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+}
+   
+
+    .home-bg{
+        width: 50vw;
+        height: auto;
+    }
+
+    .home-bg img{
+        width: 100vw;
+        height: 50vh;
+        filter: opacity(0.8);
+    }
+
+    .main-container{
+        position: relative;
+        top: -290px;
+        right: 0px;
+        font-size: 12px;
+    }
+
+    .prevent-container{
+        margin: 0px;
+    }
+    
+    .prevent-title{
+        font-size: 30px;
+        position: relative;
+        transform: translateY(-50px);
+        margin-left: 10px;
+    }
+
+    .first-row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px;
+        font-size: 14px;
+        width: 100%;
+        position: relative;
+        bottom: 50px;
+    }
+    
+    .second-row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px;
+        font-size: 14px;
+        width: 100%;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .prevent-row{
+        margin: 10px;
+    }
+
+    .img-care{
+        margin: 0;
+    }
+
+    .prevent-container h2{
+        position: relative;
+        bottom: 0;
+    }
+    
+    .sintomas-container{
+        background: url(/images/background-img.jpg);
+        width: 100%;
+        display: flex;
+        margin: 0px;
+        padding: 50px;
+        position: relative;
+        bottom: 40px;
+    }
+    
+    .sintomas-container h2{
+        text-transform: uppercase;
+        color: red;
+        font-size: 30px;
+        position: absolute;
+        right: 80px;
+        margin-top: 10px;
+        transform: translateY(-50px);
+    }
+    
+    .sintomas-container .sint-img{
+        visibility: hidden;
+    }
+    
+    .sympths{
+        position: absolute;
+        top: 60px;
+        right: -50px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .sympths img{
+        width: 120px;
+        height: 120px;
+        margin-right: 90px;
+    }
+
+    .sympths p{
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        margin-left: -25px;
+        font-size: 11px;
+    }
+
+    .do-notdo{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px;
+        margin-left: 50px;
+        width: 100%;
+    }
+    
+    .precauciones-titulo h2{
+        font-size: 25px;
+        margin-right: 5px;
+        margin-top: 25px;
+    }
+    
+    .cosas {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 70px;
+    }
+    
+    .cosas h2{
+        padding: 0px 0;
+        text-align: center;
+        margin-left: -30px;
+        margin-top: -10px;
+        text-transform: initial;
+    }
+
+    .do-container, .donot-container{
+        border: 2px solid white;
+        margin: 0px;
+        box-shadow: 0px 9px 10px 3px rgba(0, 0, 0, 0.3);
+        width: 75%;
+        position: relative;
+        left: 1px;
+    }
+
+    .donot-container{
+        margin-top: 10px;
+    }
+    
+    .do-container h1{
+        font-weight: 500;
+        color: #fff;
+        font-size: 25px;
+        padding: 10px;
+        background-color: #3C6381;
+    }
+    
+    .donot-container h1{
+        font-weight: 500;
+        color: #fff;
+        font-size: 25px;
+        padding: 10px;
+        background-color: rgb(255, 115, 0);
+    }
+    
+    .do-container h2, .donot-container h2{
+        padding: -40px 0px;
+        font-weight: 600;
+        color: #3C6381;
+        font-size: 22px;
+        width: 70%;
+    }
+
+    .cohete{
+        position: relative;
+        height: 80px;
+        width: 80px;
+        top: -200px;
+        left: 150px;
+    }
+    
+.doctores-container img{
+    width: 150px;
+    height: 150px;
+    background-color: #3C6381;
+    border-radius: 50%;
+}
+
+.doctores-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-right: 20px;
+}
+
+.doctor{
+    width: 100%;
+}
+
+.wash-container{
+    padding: 35px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+.wash-container img{
+    width: 150px;
+    height: 150px;
+}
+
+.wash-h1-container h1{
+    text-transform: uppercase;
+    color: #3C6381;
+    font-weight: 500;
+}
+
+.wash-imgs{
+    text-align: center;
+    color: #3C6381;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    right: -50px;
+}
+
+.wash-imgs h2{
+    text-align: center;
+    font-size: 18px;
+}
+
+.img-main-wash img{
+    display: none;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 15px;
+    position: relative;
+}
+
+.about-us-container, .location-container, .links-container, .follow-us-container {
+    margin: 10px;
+}
+
+.about-us-container{
+    width: 80%;
+}
+
+.sign{
+    position: relative;
+    font-size: 10px;
+    top: 80px;
+    right: 70px;
+    color: grey;
+}
+    }
+
+  
+
